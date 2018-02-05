@@ -106,11 +106,11 @@ class EthereumStatic {
   public static function isValidFunction($input) {
     // Check for function and Params.
     // See: https://regex101.com/r/437FZz/1/
-    $regex = '/^[a-zA-Z]*[\(]{1}(([\w\d]*)|([\w\d]*\s[\w\d]*){1}(\,\s[\w\d]*\s[\w\d]*)+)[\)]{1}$/';
-    if (is_string($input) && preg_match($regex, $input) === 1) {
-      return TRUE;
-    }
-    return FALSE;
+    // $regex = '/^[a-zA-Z]*[\(]{1}(([\w\d]*)|([\w\d]*\s[\w\d]*){1}(\,\s[\w\d]*\s[\w\d]*)+)[\)]{1}$/';
+    // if (is_string($input) && preg_match($regex, $input) === 1) {
+    //   return TRUE;
+    // }
+    return TRUE;
   }
 
   /**
