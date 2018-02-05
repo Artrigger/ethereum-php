@@ -73,7 +73,7 @@ class SendTransaction extends EthDataType {
     }
   }
 
-  public function setValue(EthQ $value){
+  public function setVal(EthQ $value){
     if (is_object($value) && is_a($value, 'EthQ')) {
       $this->value = $value;
     }
